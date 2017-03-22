@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>SQL_Adisor</title>
+</head>
+
+<style> 
+body{ text-align:center} 
+.div{ margin:0 auto; width:800px; height:100px} 
+</style>
+
+<body class="div" >
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"  />
+
+	<script type="text/javascript" src="jquery.min.js"></script> 
+	
+	<script>
+	$(function(){
+	  $('#btn').click(function(){            
+				$.ajax({
+					 url:"http://10.40.6.228:9999/sqladvisor",
+					 data:$("#myForm").serialize(),
+					 type:"get",
+					 dataType:'text',
+					 success:function(data){
+						/*var json = encodeURI(JSON.stringify(data),"utf-8")*/
+						$("#txtresp").val(eval(data));
+					 }
+				});     
+			});
+	});
+	</script>
+
+	<font size="4">
+		</br>
+		<form id="myForm" action="http://10.40.6.228:9999/sqladvisor" >
+			<div>
+				<table border="0">
+					<tr>
+						<td><label>host:<input type="text" name="host" value="your host"/></label></td>
+						<td><label>port:<input type="text" name="port" value="3306"/></label></td>
+						<td><label>dbname: <input type="text" name="dbname" value="your dbname"/></label></td>
+					</tr>
+					<tr>
+						<td><label>user:<input type="text" name="user" value="root"/></label></td>
+						<td><label>pwd:<input type="password" name="pwd" value="123456"/></label></td>
+					</tr>
+				</table>
+							
+				<div style="margin: auto;">
+					<textarea name="sqls" style="width: 100%;" rows="10">select * from sbtest1</textarea></br>
+					<textarea id="txtresp" name="input" style="width: 100%;" rows="20"></textarea>
+				</div>		
+				<input type="button" id="btn" value="SQL Advisor  GO !"/>
+			</div>
+		</form>
+	</font>
+
+
+
+
+</body>
+</html>
