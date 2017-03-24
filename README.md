@@ -7,4 +7,4 @@ sqlAdvistor界面版的查询工具，sqlAdvistor只有一个linux下命令后�
 
 2.在该服务器上安装python环境，目前代码是基于python2.7编写的，设定虚拟环境，切换到2.7并安装pipe，安装request和flask包。<br/>
 
-3.启动server_sqlAdvisor.py脚本即可，注意脚本中有指定端口，默认是9999端口<br/>
+3.启动server_sqlAdvisor.py脚本即可，注意脚本中有指定端口，默认是9999端口。<br/>
