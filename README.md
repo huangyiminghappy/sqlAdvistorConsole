@@ -4,7 +4,7 @@ sqlAdvistor只有一个linux下命令后查询方式，通过在命令行下执�
 ![image](https://github.com/huangyiminghappy/sqlAdvistorConsole/blob/master/static/sqladvistor.png)
 操作步骤：<br/>
 1.根据https://github.com/Meituan-Dianping/SQLAdvisor/blob/master/README.md
-步骤在lunux服务器上安装部署sqladvistor<br/>
+步骤在lunux服务器上安装部署sqladvistor。<br/>
 
 2.在该服务器上安装python环境，目前代码是基于python2.7编写的，设定虚拟环境，切换到2.7并安装pipe，安装request和flask包。<br/>
 
