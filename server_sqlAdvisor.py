@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Date    : 2017-03-13 16:51:26
-# @Author  : huangyiming (huangyiming@globalegrowejob2016)
-# @Link    : ${link}
-# @Version : $Id$
+
 
 import os
 from flask import Flask, request, Response,jsonify
