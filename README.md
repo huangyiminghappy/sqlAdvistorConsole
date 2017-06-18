@@ -1,6 +1,6 @@
 # sqlAdvistorConsole
 
-sqlAdvistor只有一个linux下命令后查询方式，通过在命令行下执行./sqladvisor -h xx  -P xx  -u xx -p 'xx' -d xx -q "sql" -v 1得到sql的优化建议，sqlAdvistorConsole通过python提供http服务，通过html界面的方式输入数据连接等信息，对sql语句进行分析，将展示结果展示在界面上。本项目是sqlAdvistor官方群内第一个公布的界面版工具，效果如图：
+sqlAdvistor只有一个linux下命令后查询方式，通过在命令行下执行./sqladvisor -h xx  -P xx  -u xx -p 'xx' -d xx -q "sql" -v 1得到sql的优化建议，sqlAdvistorConsole通过python提供http服务，通过html界面的方式输入数据连接等信息，对sql语句进行分析，将展示结果展示在界面上。本项目是sqlAdvistor官方群内第一个公布的界面版工具，效果如图所示：
 ![image](https://github.com/huangyiminghappy/sqlAdvistorConsole/blob/master/static/sqladvistor.png)
 
 操作步骤：<br/>
